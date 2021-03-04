@@ -1,0 +1,9 @@
+.bookCard{  
+    background-color: black;
+    color:white;
+}
+
+#bookContainer{
+    display: grid;
+    row-gap: 10px;;
+}
