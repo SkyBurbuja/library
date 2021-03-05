@@ -28,8 +28,8 @@ function createNewBook(){
 const theHobbit = new book('The Hobbit','J.R.R Tolkien',295,'not read');
 const harryPotterPS = new book('Harry Potter and the Philosphers Stone','J.K Rowling',250,'read');
 
-addBookToLibrary(theHobbit);
-addBookToLibrary(harryPotterPS);
+//addBookToLibrary(theHobbit);
+//addBookToLibrary(harryPotterPS);
 
 function removeAllChildNodes(parent) {
     while (parent.firstChild) {
