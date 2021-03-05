@@ -16,17 +16,29 @@ function addBookToLibrary(newBook){
 
 function createNewBook(){
     let newTitle = prompt('What is the title of the book');
+    if(newTitle == null){
+        return;
+    }
     let newAuthor = prompt('Who is the author?');
+    if(newAuthor==null){
+        return;
+    }
     let pages = prompt('How many pages?');
+    if(pages==null){
+        return;
+    }
     let read = prompt('Have you read it?');
+    if(read ==null){
+        return;
+    }
     let newBook = new book(newTitle,newAuthor,pages,read);
     addBookToLibrary(newBook);
     displayBooks()
 }
 
 //Dummy books to gauge display
-const theHobbit = new book('The Hobbit','J.R.R Tolkien',295,'not read');
-const harryPotterPS = new book('Harry Potter and the Philosphers Stone','J.K Rowling',250,'read');
+//const theHobbit = new book('The Hobbit','J.R.R Tolkien',295,'not read');
+//const harryPotterPS = new book('Harry Potter and the Philosphers Stone','J.K Rowling',250,'read');
 
 //addBookToLibrary(theHobbit);
 //addBookToLibrary(harryPotterPS);
